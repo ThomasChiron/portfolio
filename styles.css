@@ -60,7 +60,7 @@
     padding: 2.5rem 2rem 2rem 2rem;
     text-align: center;
   }
-  
+
   .portfolio-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -135,4 +135,22 @@
     margin: 0.5rem;
     border-radius: 1rem;
     background-color: #cccccc;
+  }
+
+  @media (max-width:600px){
+    .about-section,
+    .portfolio-section,
+    .contact-section {
+      padding: 2.5rem 0.5rem 2rem 0.5rem;
+      text-align: center;
+    }
+
+    .portfolio-item img {
+      max-width: 6rem;
+    }
+
+    .portfolio-grid {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
   }
