@@ -102,3 +102,16 @@ section {
     border-radius: 8px;
   }
   
+  @media (max-width:600px){
+    .gallery-grid {
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+   }
+   .project-gallery {
+    padding: 1rem 1rem;
+    }
+
+    .gallery-item img {
+      max-width: -webkit-fill-available;
+      border-radius: 8px;
+    }
+  }

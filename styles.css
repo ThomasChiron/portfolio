@@ -75,6 +75,7 @@
     border-radius: 8px;
     gap: 0.7rem;
     position: relative;
+    user-select: none;
   }
 
   .portfolio-item:hover {
