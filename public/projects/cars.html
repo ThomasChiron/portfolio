@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Self driving cars - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="projectStyles.css">
+</head>
+<body>
+  <!-- Project Title and Summary -->
+  <header id="project" class="project-intro">
+    <h1>Self driving cars</h1>
+    <a href="https://your-live-demo-link.com" target="_blank" class="btn">Live Demo</a>
+  </header>
+  
+  <a class="homebtn" href="/public/"> <img src="../images/home_btn.svg"/></a>
+  
+  <section class="project-features">
+    <p>
+      This project was the occasion to explore genetic algorithm with neural networks for driving cars through a circuit.
+    
+      All the calculations are done on browser thanks to tensorflowJS WASM backend.
+    </p>
+    <p>Each car of the first population is initialized with a random neural network that takes driving decisions according to the car field of view. When either the simulation time exceeds a limit or the whole population is crashed, a new population is created. This new population is created from the previous one by breeding the best individuals and randomly mutating them.</p>
+    
+    <i>This project could evolve later as a game.</i> 
+
+    <h2>Technologies Used</h2>
+    <ul class="tech-list">
+      <li>JavaScript</li>
+      <li>Typescript</li>
+      <li>TensorflowJS</li>
+    </ul>
+  </section>
+
+  <!-- Project Gallery Section -->
+  <section id="gallery" class="project-gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <video controls width="350" autoplay muted loop>
+          <source src="../videos/cars - Trim.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 Thomas CHIRON. All rights reserved.</p>
+  </footer>
+</body>
+</html>

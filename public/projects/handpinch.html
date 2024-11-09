@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hand pinching - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="projectStyles.css">
+</head>
+<body>
+  <!-- Project Title and Summary -->
+  <header id="project" class="project-intro">
+    <h1>Hand pinching</h1>
+  </header>
+  
+  <a class="homebtn" href="/public/"> <img src="../images/home_btn.svg"/></a>
+  
+  <section class="project-features">
+    <p>
+      To explore real-time possibilities offered by Google MediaPipe, I created a program that allows the user to pinch its surroundings (background image) and play with it.   
+    </p>
+
+    <p>
+      Once a pinch is detected, the background image is segmented at the focused point in order to extract the image of the <i>grabbed</i> object. Then the user can interact with the <i>grabbed</i> object with both of his hands to rotate it, scale it, and move it around.
+    </p>
+
+    <h2>Technologies Used</h2>
+    <ul class="tech-list">
+      <li>Python</li>
+      <li>OpenCV</li>
+      <li>Tensorflow</li>
+    </ul>
+  </section>
+
+  <!-- Project Gallery Section -->
+  <section id="gallery" class="project-gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <video controls width="350" autoplay muted loop>
+          <source src="../videos/handpinch - Trim.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 Thomas CHIRON. All rights reserved.</p>
+  </footer>
+</body>
+</html>

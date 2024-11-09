@@ -1,0 +1,104 @@
+/* General styling */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+section {
+  margin: 2rem;
+}
+  .project-intro {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f3f3f3
+  }
+  
+  .project-intro h1 {
+    font-size: 2rem;
+  }
+  
+  .project-intro p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .project-intro .btn {
+    background-color: #075ca6;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 4px;
+    margin: 0.5
+  }  
+
+
+  footer {
+    background-color: #3e3e3e;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .homebtn {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    width: 35px;
+    height: 35px;
+    background-color: #3e3e3e;
+    border-radius: 10px;
+    padding: 4px;
+  }
+  
+  .homebtn:hover {
+    background-color: #515151;
+  }
+  
+  .homebtn img {
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+  }
+
+
+  .project-features,
+  .project-details {
+    padding: 3rem 2rem 0.5rem 2rem;
+    text-align: left;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .project-features ul,
+  .tech-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .tech-list li {
+    display: inline-block;
+    margin: 0.25rem;
+    padding: 0.5rem;
+    background-color: #f3f3f3;
+    border-radius: 4px;
+  }
+  
+  .project-gallery {
+    padding: 1rem 2rem;
+    text-align: center;
+  }
+  
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1rem;
+  }
+  
+  .gallery-item img {
+    max-width: 350px;
+    border-radius: 8px;
+  }
+  

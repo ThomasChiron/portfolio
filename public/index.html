@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thomas CHIRON - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./images/website_logo.svg">
+</head>
+
+<body>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <h1>Thomas CHIRON</h1>
+    </section>
+
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section">
+        <h2>Personal projects</h2>
+        <div class="portfolio-grid">
+            
+            <!-- Cars -->
+            <div class="portfolio-item" onclick="navigate('projects/cars.html')">
+                <img src="images/cars_logo.png" alt="cars">
+                <div class="item-content">
+                    <h3>Self driving cars</h3>
+                    <div class="separator"></div>
+                    <p>Teaching topdown 2D cars to drive using <b>genetic algorithm</b> and/or <b>reinforcement
+                            learning</b>.</p>
+                    <div class="tag-zone">
+                        <span class="tag js-tag">JavaScript</span>
+                        <span class="tag">TensorflowJS</span>
+                        <span class="tag">Deep RL</span>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Missing project -->
+             <div class="portfolio-item" onclick="navigate('projects/missing.html')">
+                <img src="images/missing_logo.png" alt="missing">
+                <div class="item-content">
+                    <h3>Missing project</h3>
+                    <div class="separator"></div>
+                    <p>?</p>
+                    <div class="tag-zone">
+                        <span class="tag python-tag">Python</span>
+                        <span class="tag">Pytorch</span>
+                        <span class="tag">Deep RL</span>
+                        <span class="tag">Multi agent</span>
+                        <span class="tag">Deep Learning</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hand pinch -->
+            <div class="portfolio-item" onclick="navigate('projects/handpinch.html')">
+                <img src="images/handpinch_logo.png" alt="handpinch">
+                <div class="item-content">
+                    <h3>Hand pinch recognition</h3>
+                    <div class="separator"></div>
+                    <p>Having fun with Google MediaPipe's landmarks detection and interactive segmentation.</p>
+                    <div class="tag-zone">
+                        <span class="tag python-tag">Python</span>
+                        <span class="tag">Tensorflow</span>
+                        <span class="tag">OpenCV</span>
+                        <span class="tag">Deep learning</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navier Stokes -->
+            <div class="portfolio-item" onclick="navigate('projects/fluidSim.html')">
+                <img src="images/fluids_logo.png" alt="fluids">
+                <div class="item-content">
+                    <h3>Simple fluid simulation</h3>
+                    <div class="separator"></div>
+                    <p>Topdown 2D fluid simulation using Navier Stokes equations. Implemented both in C++ and JavaScript</p>
+                    <div class="tag-zone">
+                        <span class="tag js-tag">JavaScript</span>
+                        <span class="tag">C++</span>
+                        <span class="tag">OpenCV</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- The Lost Path -->
+            <div class="portfolio-item" onclick="navigate('projects/thelostpath.html')">
+                <img src="images/thelostpath_logo.png" alt="thelostpath">
+                <div class="item-content">
+                    <h3>The lost path</h3>
+                    <div class="separator"></div>
+                    <p>Game written in JavaScript for Nokia3310 game jam</p>
+                    <div class="tag-zone">
+                        <span class="tag js-tag">JavaScript</span>
+                        <span class="tag">Game jam</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Super plane -->
+            <div class="portfolio-item" onclick="navigate('projects/superplane.html')">
+                <img src="images/superplane_logo.png" alt="superplane">
+                <div class="item-content">
+                    <h3>Super plane</h3>
+                    <div class="separator"></div>
+                    <p>Game written in JavaScript for GB Jam 8</p>
+                    <div class="tag-zone">
+                        <span class="tag js-tag">JavaScript</span>
+                        <span class="tag">Game jam</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio-section">
+        <h2>Scholar & professional projects</h2>
+        <div class="portfolio-grid">
+            
+            <!-- Verbatim viz -->
+            <div class="portfolio-item" onclick="navigate('projects/verbatim.html')">
+                <img src="images/verbatim_logo.png" alt="cars">
+                <div class="item-content">
+                    <h3>Verbatim extraction & correction interface</h3>
+                    <div class="separator"></div>
+                    <p>Audio verbatim generation with speaker detection. A multi-user web app was developped to correct transcription errors.</p>
+                    <div class="tag-zone">
+                        <span class="tag">Speech to Text (Whisper)</span>
+                        <span class="tag">Diarization (Pyannote)</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Python</span>
+                        <span class="tag project-class">Internship</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MRI segmentation & classif-->
+            <div class="portfolio-item" onclick="navigate('projects/mri.html')">
+                <img src="images/mri_logo.png" alt="mri_logo">
+                <div class="item-content">
+                    <h3>Breast MRI processing</h3>
+                    <div class="separator"></div>
+                    <p>Detecting breast cancer on MRIs using deep learning (MRI classification and segmentation)</p>
+                    <div class="tag-zone">
+                        <span class="tag">Python</span>
+                        <span class="tag">Pytorch</span>
+                        <span class="tag">Segmentation</span>
+                        <span class="tag">Classification</span>
+                        <span class="tag">Deep learning</span>
+                        <span class="tag project-class">Internship</span>
+                    </div>
+                </div>
+            </div>
+
+             <!--Eye-tracker -->
+             <div class="portfolio-item" onclick="navigate('projects/eyetracker.html')">
+                <img src="images/eyetracker_logo.png" alt="eyetracker_logo">
+                <div class="item-content">
+                    <h3>Event based eye-tracker</h3>
+                    <div class="separator"></div>
+                    <p>Eye-tracking using Spiking Neural Networks (SNN) and event based cameras.</p>
+                    <div class="tag-zone">
+                        <span class="tag">Python</span>
+                        <span class="tag">Pytorch</span>
+                        <span class="tag">Deep learning</span>
+                        <span class="tag">SNN</span>
+                        <span class="tag project-class">School project</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <h2>About Me</h2>
+        <p>I'm a passionate developper enjoying optimization and visual applications.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Thomas CHIRON. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function navigate(projectPath){
+            window.location.href = projectPath;
+        }
+    </script>
+</body>
+
+</html>

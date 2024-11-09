@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eye-tracker - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="projectStyles.css">
+</head>
+<body>
+  <!-- Project Title and Summary -->
+  <header id="project" class="project-intro">
+    <h1>Event based eye-tracker</h1>
+  </header>
+  
+  <a class="homebtn" href="/public/"> <img src="../images/home_btn.svg"/></a>
+  
+  <section class="project-features">
+    <p>
+      The aim of this project was to conduct a research about the feasability of an event based eye-tracker.       
+    </p>
+
+    <p>
+      Event-based cameras are able to capture movement at a very high framerate and work asynchronously unlike the standard RGB cameras we know. According to these capabilities, using event-based cameras for eye-tracking could lead a very high rate eye tracker. 
+    </p>
+
+    <p>
+      In the other hand, due to the asynchronous nature of events produced by the camera, it was decided to explore the usage of Spiking Neural Networks (SNN) for processing eye events. This theorically (when implemented on neuromorphic hardware) leads to an high rate and energy efficient eye-tracker.
+    </p>
+
+    <h2>Technologies Used</h2>
+    <ul class="tech-list">
+      <li>Python</li>
+      <li>Pytorch</li>
+      <li>snnTorch</li>
+    </ul>
+  </section>
+
+  <!-- Project Gallery Section -->
+  <section id="gallery" class="project-gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="../images/eyetracker_logo.png"/>
+      </div>
+      <div class="gallery-item">
+        <img src="../images/eyetracker_img2.gif"/>
+      </div>
+      <div class="gallery-item">
+        <img src="../images/eyetracker_img3.png"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 Thomas CHIRON. All rights reserved.</p>
+  </footer>
+</body>
+</html>
