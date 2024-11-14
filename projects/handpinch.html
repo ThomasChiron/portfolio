@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,46 +8,67 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="projectStyles.css">
 </head>
+
 <body>
   <!-- Project Title and Summary -->
   <header id="project" class="project-intro">
     <h1>Hand pinching</h1>
   </header>
-  
-  <a class="homebtn" href="../"> <img src="../images/home_btn.svg"/></a>
-  
-  <section class="project-features">
-    <p>
-      To explore real-time possibilities offered by Google MediaPipe, I created a program that allows the user to pinch its surroundings (background image) and play with it.   
-    </p>
 
-    <p>
-      Once a pinch is detected, the background image is segmented at the focused point in order to extract the image of the <i>grabbed</i> object. Then the user can interact with the <i>grabbed</i> object with both of his hands to rotate it, scale it, and move it around.
-    </p>
+  <a class="homebtn" href="../"> <img src="../images/home_btn.svg" /></a>
 
-    <h2>Technologies Used</h2>
-    <ul class="tech-list">
-      <li>Python</li>
-      <li>OpenCV</li>
-      <li>Tensorflow</li>
-    </ul>
-  </section>
+  <div class="project-content">
 
-  <!-- Project Gallery Section -->
-  <section id="gallery" class="project-gallery">
-    <h2>Gallery</h2>
-    <div class="gallery-grid">
-      <div class="gallery-item">
-        <video controls autoplay muted loop>
-          <source src="../videos/handpinch - Trim.mp4" type="video/mp4" />
-        </video>
+
+    <section class="project-features">
+      <p>
+        To explore <b>real-time</b> possibilities offered by <a
+          href="https://github.com/google-ai-edge/mediapipe">Google MediaPipe</a>, I created a program that allows the
+        user to <b><i>grab</i> its surroundings</b> (background image) and <b>play with it</b>.
+      </p>
+
+      <p>
+        Once a pinch is detected, the background image is segmented at the focused point in order to extract the image
+        of the <i>grabbed</i> object. Then the user can interact with the <i>grabbed</i> object with both of his hands
+        to rotate it, scale it, and move it around.
+      </p>
+
+      <p>
+        In this project:
+      <ul>
+        <li>- Hand pinch detection is done with a home-made custom model trained from a self-made dataset created using
+          HandLandMarker myself.</li>
+        <li>- Hand landmarks are detected thanks to mediapipe's HandLandMarker (<a
+            href="https://github.com/google-ai-edge/mediapipe/blob/937a6b14228591e30f74142ba4f51e456224bb35/docs/solutions/hands.md">legacy
+            version as tflite</a>).</li>
+        <li>- Background segmentation is done thanks to mediapipe's <a
+            href="https://ai.google.dev/edge/mediapipe/solutions/vision/interactive_segmenter?hl=fr">MagicTouch</a>.
+        </li>
+      </ul>
+      </p>
+      <h2>Technologies Used</h2>
+      <ul class="tech-list">
+        <li>Python</li>
+        <li>OpenCV</li>
+        <li>Tensorflow</li>
+      </ul>
+    </section>
+
+    <!-- Project Gallery Section -->
+    <section id="gallery" class="project-gallery">
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <video controls autoplay muted loop>
+            <source src="../videos/handpinch - Trim.mp4" type="video/mp4" />
+          </video>
+        </div>
       </div>
-    </div>
-  </section>
-
+    </section>
+  </div>
   <!-- Footer -->
   <footer>
     <p>© 2024 Thomas CHIRON. All rights reserved.</p>
   </footer>
 </body>
+
 </html>

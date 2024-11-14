@@ -1,18 +1,28 @@
 /* General styling */
+html {
+  height: 100%;
+}
 
 body {
     font-family: 'Poppins', sans-serif;
     color: #333;
     margin: 0;
     padding: 0;
+    height: 100%;
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "main" "gallery" "footer";
+    grid-template-rows: 1fr 1fr 1fr 80px;
   }
-  
-section {
-  margin: 2rem;
-}
+
+  header {
+    grid-area: header;
+  }
+
   .project-intro {
     text-align: center;
-    padding: 2rem;
+    padding: 1rem;
     background-color: #f3f3f3
   }
   
@@ -28,7 +38,7 @@ section {
   .project-intro .btn {
     background-color: #075ca6;
     color: #fff;
-    padding: 0.75rem 1.5rem;
+    padding: 0.65rem 1.3rem;
     text-decoration: none;
     font-weight: 600;
     border-radius: 4px;
@@ -41,6 +51,7 @@ section {
     color: #fff;
     padding: 1rem;
     text-align: center;
+    grid-area: footer;
   }
 
   .homebtn {
@@ -66,7 +77,7 @@ section {
 
   .project-features,
   .project-details {
-    padding: 3rem 2rem 0.5rem 2rem;
+    padding: 1.5rem 2rem 0.5rem 2rem;
     text-align: left;
     max-width: 800px;
     margin: auto;
@@ -87,23 +98,28 @@ section {
   }
   
   .project-gallery {
-    padding: 1rem 2rem;
+    padding: 0.2rem 2rem;
     text-align: center;
+    grid-area: gallery;
   }
   
   .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 0.2fr));
     gap: 1rem;
+    justify-content: center;
+    align-items: center;
   }
   
   .gallery-item img {
     max-width: 350px;
+    max-height: 300px;
     border-radius: 8px;
   }
 
   .gallery-item video {
     max-width: 350px;
+    max-height: 300px;
     border-radius: 8px;
   }
   
@@ -112,7 +128,7 @@ section {
       grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
    }
    .project-gallery {
-    padding: 1rem 1rem;
+    padding: 0.2rem 1rem;
     }
 
     .gallery-item img {
@@ -122,4 +138,35 @@ section {
     .gallery-item video {
       max-width: -webkit-fill-available;
     }
+
+    
+  }
+
+  @media (max-width:1100px) {
+    .project-content {
+      flex-direction: column;
+    }
+  }
+
+  @keyframes highlightCite {
+    0% {
+      background-color: #d0cd017b;
+    }
+    100% {
+      background-color: transparent;
+    }
+  }
+  cite:target {
+    animation: highlightCite 2s;
+  }
+
+  .project-content {
+    display: flex;
+    align-items: center;
+    grid-area: main;
+  }
+
+  .project-gallery h2 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
   }

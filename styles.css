@@ -57,7 +57,7 @@
   .about-section,
   .portfolio-section,
   .contact-section {
-    padding: 2.5rem 2rem 2rem 2rem;
+    padding: 1.5rem 2rem 2rem 2rem;
     text-align: center;
   }
 
@@ -90,7 +90,7 @@
   }
   
   .portfolio-item img {
-    max-width: 6rem;
+    max-width: 7rem;
     border-radius: 8px;
     align-self: center;
   }

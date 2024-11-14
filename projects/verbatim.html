@@ -17,26 +17,41 @@
   
   <section class="project-features">
     <p>
-      During my internship at LS2N lab, I had the opportunity to create from scratch both the backend and frontend of an application for meeting automatic transcription and correction.
+      During my internship at LS2N lab, I had the opportunity to create from scratch both the backend and frontend of an application for <b>meeting automatic transcription</b> and correction.
     </p>
 
     <p>
-      The meeting can be provided either as audio or video and its audio content is fully transcripted thanks to Whisper model. All the speakers of the audio are detected and separated to fit the closest to a human audio transcription with multiple speakers. The program can recognize the speakers accross audio extracts and keeps speakers data in a database. 
+      The meeting can be provided either as audio or video and its audio content is fully transcripted thanks to Whisper <a href="#ci1">[1]</a> model. All the speakers of the audio are detected and separated thanks to Pyannote <a href="#ci2">[2]</a> to fit the closest to a human audio transcription with multiple speakers. The program can <b>recognize the speakers accross audio extracts</b> and keeps speakers data in a database. 
     </p>
 
     <p>
-      The web app allows to visualize the previously processed results (transcription) and to listen back to the meeting at the same time of reading the transcription so the user can correct easily the verbatim. The web app features multi-user (concurrent) transcription visualization and correction so multiple people can edit the same time.
+      The web app allows to visualize the previously processed results (transcription) and to listen back to the meeting at the same time of reading the transcription so the user can correct easily the verbatim. The web app features <b>multi-user</b> (concurrent) transcription visualization and correction so multiple people can edit the same time.
     </p>
 
+    <cite id="ci1">
+      [1] - Alec Radford et al. Robust Speech Recognition via Large-Scale Weak Supervision. 2022. arXiv :
+      <a href="https://arxiv.org/abs/2305.13516">2212.04356</a> [eess.AS].
+    </cite> 
+    <br>
+
+    <cite id="ci2">
+      [2] - Hervé Bredin et al. « pyannote.audio : neural building blocks for speaker diarization ». In :
+      ICASSP 2020, IEEE International Conference on Acoustics, Speech, and Signal Processing. 2020.
+    </cite>
+    
     <h2>Technologies Used</h2>
     <ul class="tech-list">
+      <li>Python</li>
       <li>Javascript</li>
-      <li>C++</li>
-      <li>OpenCV</li>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>NodeJS</li>
+      <li><a href="https://github.com/uNetworking/uWebSockets">µWebSockets</a></li>
     </ul>
   </section>
 
   <!-- Project Gallery Section -->
+  <!--
   <section id="gallery" class="project-gallery">
     <h2>Gallery</h2>
     <div class="gallery-grid">
@@ -45,7 +60,7 @@
       </div>
     </div>
   </section>
-
+  -->
   <!-- Footer -->
   <footer>
     <p>© 2024 Thomas CHIRON. All rights reserved.</p>
